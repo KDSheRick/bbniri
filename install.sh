@@ -80,3 +80,11 @@ fi
 
 echo
 echo "完成!现在退出登录,在登录界面选择 Niri;快捷方式: Super+Enter 终端 / Super+R 启动器 / Super+W 壁纸 / Super+N 护眼"
+
+# 7. Nerd Font (Orbit launcher icons) — installed by default; skips if present
+if fc-list 2>/dev/null | grep -qi "JetBrainsMono Nerd Font"; then
+    echo "[✓] JetBrainsMono Nerd Font"
+else
+    echo "[!] 未检测到 JetBrainsMono Nerd Font — Super+A Orbit 图标会乱码。请运行:"
+    echo "    mkdir -p ~/.local/share/fonts && cd /tmp && curl -fLJO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip && unzip -qo JetBrainsMono.zip -d ~/.local/share/fonts/ && fc-cache -f"
+fi

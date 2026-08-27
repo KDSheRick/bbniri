@@ -54,7 +54,7 @@ git clone --depth 1 https://github.com/KDSheRick/bbniri.git ~/bbniri
 cd ~/bbniri && ./install.sh
 ```
 
-脚本会:备份旧配置到 `~/.config/dotfiles_backup_*`、替换 `$HOME` 路径、建立 `effects.kdl` 软链、拷贝壁纸与 fcitx5 皮肤。
+脚本会:备份旧配置到 `~/.config/dotfiles_backup_*`、替换 `$HOME` 路径、建立 `effects.kdl` 软链、拷贝壁纸与 fcitx5 皮肤,并检查 **JetBrainsMono Nerd Font**(Super+A Orbit 启动器图标必需,缺失时会输出安装指引)。
 
 ### 4. 登录
 
