@@ -22,3 +22,6 @@ for cdir in $custom_dirs
         end
     end
 end
+
+# Show system info when a terminal opens (fastfetch)
+fastfetch
