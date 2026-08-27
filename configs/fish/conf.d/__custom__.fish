@@ -24,4 +24,9 @@ for cdir in $custom_dirs
 end
 
 # Show system info when a terminal opens (fastfetch)
-fastfetch
+# kitty: image logo; elsewhere: no logo (no ascii fallback)
+if test -n "$KITTY_WINDOW_ID"
+    fastfetch
+else
+    fastfetch --logo-type none
+end
